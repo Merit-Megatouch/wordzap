@@ -1,0 +1,109 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+LinkedWithCnt | wordzap.so
+NetGlob | wordzap.so
+WhoWeArePlaying | wordzap.so
+LangDirExist(char const*) | wordzap.so
+DisplayDefeated(int, int) | wordzap.so
+Heartbeat_Check(int, int) | wordzap.so
+IsScreenTouched() | wordzap.so
+Menu_AppendLangExt(Locale::Languages, char (&) [255]) | wordzap.so
+Heartbeat_WaitForAll(unsigned long, bool) | wordzap.so
+t_i_l() | wordzap.so
+GetMyId() | wordzap.so
+u_m_m_s(char const*, char*, char*, unsigned int) | wordzap.so
+QueFlush(bool) | wordzap.so
+GetMaster() | wordzap.so
+NetGlobals::GetHeadBmp(unsigned char, bool) | wordzap.so
+NetGlobals::GetHeadIdx(unsigned char) | wordzap.so
+NetGlobals::ProcNetClicks() | wordzap.so
+NetGlobals::GetTrueLinkCount() | wordzap.so
+NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | wordzap.so
+NetGlobals::GetRank(unsigned char) | wordzap.so
+NetGlobals::GetScore(int) | wordzap.so
+TextSystem::LoadTranslations(xml_gameinfo::GameIds) | wordzap.so
+WorldClass::FrameNumber(Bitmap*) | wordzap.so
+WorldClass::CopyCompBitmap(Bitmap*, int, int, int, int, int, int, int, int, int, int, bool) | wordzap.so
+WorldClass::AnimationFrames(Bitmap*) | wordzap.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | wordzap.so
+WorldClass::SetBack(char const*, int) | wordzap.so
+WorldClass::ShowAll() | wordzap.so
+WorldClass::GetFrame(Bitmap*, int) | wordzap.so
+WorldClass::DeleteBmp(Bitmap*, unsigned char) | wordzap.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | wordzap.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | wordzap.so
+WorldClass::WorldClass() | wordzap.so
+system_info::Get_Motherboard_Type() | wordzap.so
+List::Dump() | wordzap.so
+List::Push(Group*) | wordzap.so
+List::Clear(unsigned char) | wordzap.so
+List::IsEmpty() | wordzap.so
+List::List(List*) | wordzap.so
+Books::Credits(xml_gameinfo::GameIds, enums::Span) | wordzap.so
+Books::Instance() | wordzap.so
+Group::Signal(Group::SpriteSignalType) | wordzap.so
+Group::Signal(SpriteSignal*) | wordzap.so
+Group::Message(Group::SpriteSignalType) | wordzap.so
+Group::Message(SpriteSignal*) | wordzap.so
+USBIO::FoundUSB() | wordzap.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | wordzap.so
+Bitmap::GreyBmp() | wordzap.so
+Bitmap::NextAnim() | wordzap.so
+EventO::GetType() | wordzap.so
+EventO::EventO() | wordzap.so
+EventO::~EventO() | wordzap.so
+Locale::LanguageManager::LegacyFallback(Locale::Languages) | wordzap.so
+Sprite::SetBmpCord(Bitmap*, int, int, int, unsigned long) | wordzap.so
+Sprite::DoNextFrame() | wordzap.so
+Sprite::SpriteClick() | wordzap.so
+Sprite::AssignString(String*, unsigned long) | wordzap.so
+Sprite::ChangeString(char const*, unsigned long) | wordzap.so
+Sprite::ClicksEnabled | wordzap.so
+Sprite::LastEventTime() | wordzap.so
+Sprite::MoveChangeBmp(Bitmap*, float, float, float, float, float, float, unsigned long, unsigned long, unsigned char) | wordzap.so
+Sprite::EnableAllClicks(unsigned long) | wordzap.so
+Sprite::DisableAllClicks(unsigned long) | wordzap.so
+Sprite::CreateTextDropShadow(float, float, unsigned long, int, int, int) | wordzap.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | wordzap.so
+Sprite::Move(float, float, float, float, float, float, unsigned long, unsigned long, unsigned char) | wordzap.so
+Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | wordzap.so
+Sprite::Reset() | wordzap.so
+Sprite::Scale(float, float, unsigned long, unsigned long, unsigned char) | wordzap.so
+Sprite::DoDraw() | wordzap.so
+Sprite::Enable(unsigned long) | wordzap.so
+Sprite::SetBmp(Bitmap*, unsigned long) | wordzap.so
+Sprite::Signal(Group::SpriteSignalType) | wordzap.so
+Sprite::Signal(SpriteSignal*) | wordzap.so
+Sprite::Disable(unsigned long, bool) | wordzap.so
+Sprite::Message(Group::SpriteSignalType) | wordzap.so
+Sprite::Message(SpriteSignal*) | wordzap.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | wordzap.so
+Sprite::SetCord(float, float, float, unsigned long) | wordzap.so
+Sprite::SetSize(int, int) | wordzap.so
+Sprite::DoCommand(int) | wordzap.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | wordzap.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | wordzap.so
+Sprite::~Sprite() | wordzap.so
+String::String(BmpFont*, char const*, int, signed char, int, int, int, unsigned char, unsigned char) | wordzap.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | wordzap.so
+NetTimer::InstallCallBackFxn(unsigned char, void*, void (*)(unsigned long, void*)) | wordzap.so
+NetTimer::Pause() | wordzap.so
+NetTimer::Start() | wordzap.so
+NetTimer::UnPause() | wordzap.so
+NetTimer::NetTimer(unsigned long, unsigned long, unsigned char, unsigned short, bool) | wordzap.so
+GameClass::GameClass() | wordzap.so
+GameClass::~GameClass() | wordzap.so
+NetSprite::SendPacket(unsigned char) | wordzap.so
+NetSprite::NetSprite(Bitmap*, unsigned short, unsigned char, unsigned short) | wordzap.so
+NetSprite::~NetSprite() | wordzap.so
+Locale::LanguageManager::Base() const | wordzap.so
+typeinfo for EventO | wordzap.so
+typeinfo for Sprite | wordzap.so
+typeinfo for GameClass | wordzap.so
+typeinfo for NetSprite | wordzap.so
+vtable for DOSLinuxWorld | wordzap.so
+clear_bitmap | wordzap.so
+gfx_driver | wordzap.so
+screen | wordzap.so
