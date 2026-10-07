@@ -4,7 +4,6 @@
 # symbol | needed by
 t_i_l() | wordzap.so
 NetGlobals::GetHeadBmp(unsigned char, bool) | wordzap.so
-NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | wordzap.so
 NetGlobals::GetScore(int) | wordzap.so
 USBIO::FoundUSB() | wordzap.so
 NetTimer::InstallCallBackFxn(unsigned char, void*, void (*)(unsigned long, void*)) | wordzap.so
